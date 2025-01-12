@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+    Template by:
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+    Website for MegaTau by:
+    Nina Lutz
+    Billy Caruso 
+-->
+<html>
+	<head>
+		<title>MegaTau - MIT 2025 Reunion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	
+<!-- Display the countdown timer in an element -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 10, 2025 01:01:01").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "Countdown till reunion: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>MegaTau</strong> <span>MIT 20{17,18,19} Tau Reunion</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+ 							<li><a href="schedule.html">Schedule</a></li>
+                            <li><a href="contact.html">Contact + Committee</a></li>
+                            <li><a href="sponsors.html">Sponsors</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>October 10-12 2025, New Orleans, Louisiana</h1>
+								<h2 id="demo"></h2>
+							</header>
+							<div class="content">
+								<p>Tau Reunion is an MIT tradition celebrated 6.28 years after graduation. MegaTau is a return of the megatau combined reunion event of 2022.</p>
+
+								<ul class="actions">
+									<li><a href="#one" class="button next scrolly">More info!</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/MITArial.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="schedule.html" class="link">Schedule</a></h3>
+										<h5>Fun events for all classes, all day!</h5>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/statue.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="faq.html" class="link">What?</a></h3>
+										<h5>Mega-Tau is the 6.28… year class reunion for the MIT Classes of 2017, 2018 and 2019.</h5>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/nola2.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="faq.html" class="link">Where</a></h3>
+										<h5>Tau Reunion will take places in New Orleans!</h5>
+										<h5>The Mega-Pi Tau has reserved a room block at a discounted rate at the Royal Sonesta! Check out our FAQ for more info!</h5>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/nola1.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="faq.html" class="link">I have more questions!</a></h3>
+										<h5>Check out our FAQ!</h5>
+									</header>
+								</article>
+
+							</section>
+
+
+					</div>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<a href="mailto:megatau@mit.edu">megatau@mit.edu</a>
+									</div>
+<!-- 								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+ --><!-- 								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+ -->								
+<!--  <li><a href="http://instagram.com/megatau_2022" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+ -->							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+        <script type="module">
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyDJ7v7H8vPJD9NklnP5v8BXIRpvtc3yuW8",
+            authDomain: "megatau-party.firebaseapp.com",
+            projectId: "megatau-party",
+            storageBucket: "megatau-party.appspot.com",
+            messagingSenderId: "558400221457",
+            appId: "1:558400221457:web:b7df55821a0a805f6b9cb0",
+            measurementId: "G-2X2X111B1N"
+          };
+
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
+        </script>
+	</body>
+</html>
